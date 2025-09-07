@@ -1,0 +1,15 @@
+<apex:page standardController="Case" renderAs="pdf">
+    <h1>Case Summary</h1>
+    <table border="1" cellpadding="5" style="width:100%; border-collapse:collapse;">
+        <tr><th>Case Number</th><td>{!Case.CaseNumber}</td></tr>
+        <tr><th>Subject</th><td>{!Case.Subject}</td></tr>
+        <tr><th>Status</th><td>{!Case.Status}</td></tr>
+        <tr><th>Priority</th><td>{!Case.Priority}</td></tr>
+        <tr><th>Type</th><td>{!Case.Type}</td></tr>
+        <tr><th>Reason</th><td>{!Case.Reason}</td></tr>
+        <tr><th>Origin</th><td>{!Case.Origin}</td></tr>
+        <tr><th>Description</th><td>{!Case.Description}</td></tr>
+        <tr><th>Created Date</th><td>{!Case.CreatedDate}</td></tr>
+        <tr><th>Closed Date</th><td>{!Case.ClosedDate}</td></tr>
+    </table>
+</apex:page>
